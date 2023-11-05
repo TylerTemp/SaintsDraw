@@ -6,6 +6,8 @@
 
 ### Arrow ###
 
+![arrow](https://github.com/TylerTemp/SaintsDraw/assets/6391063/603ec523-98de-45b0-87a6-50761a3d5a8c)
+
 Using `Arrow.Draw` to draw an arrow, which has parameters:
 
 *   `Vector3 from` point where the arrow starts (tail)
@@ -17,6 +19,9 @@ Using `Arrow.Draw` to draw an arrow, which has parameters:
 Append a `LineRenderer` as the first parameter to draw the arrow using `LineRenderer`
 
 ### Arc ###
+
+![circle_arc](https://github.com/TylerTemp/SaintsDraw/assets/6391063/bb6ca2e8-cb52-405c-954a-c31773c0a629)
+
 
 Using `Arc.Draw` to draw an arc, which has parameters:
 
