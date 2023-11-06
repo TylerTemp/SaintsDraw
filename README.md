@@ -29,8 +29,11 @@ Using `Arc.Draw` to draw an arc, which has parameters:
 *   `float radius` radius of the arc
 *   `float fromArc` angle to start
 *   `float toArc` angle to end
-*   `Vector3 upward` up direction of the arc. The arc is always perpendicular to this value
-*   `Vector3 plate` as the arc no has a plate which is perpendicular to the arc, this parameter is used to determine the plate's start point. It'll be automatically put on the plate defined by the `upward` direction
+*   `Vector3 upward` up direction of the arc. The arc is always perpendicular to this value. Usually `Vector3.up` is used
+*   `Vector3 plate` as the arc no has a plate which is perpendicular to the arc, this parameter is used to determine the plate's start point. It'll be automatically put on the plate defined by the `upward` direction.
+
+    Usually `Vector3.left` or `Vector3.forward` is used
+
 *   `int numSegments` how many segments to draw for the arc. The bigger it is, the smoother the arc is
 
 Using `Arc.DrawBySegCount` to draw an with fixed segment step, which means each segment will have the same angle. It has the same parameters as `Arc.Draw` except `int numSegments` is replaced by `float segAngle`.
@@ -56,7 +59,7 @@ using (new ColorScoop(Color.green))
 
 ### Gizmos Matrix ###
 
-Useful if you want to draw gizmos in local space inherited parent's scale and rotation
+Useful if you want to draw gizmos in local space inheriting parent's scale and rotation
 
 ```csharp
 using (new MatrixScoop(transform.localToWorldMatrix))
@@ -74,7 +77,7 @@ this will normalized your angle, which allow over 360 but will has no overlap
 (float normFromArc, float normToArc) = Arc.NormalAngleRange(_fromArc, _toArc);
 ```
 
-this will display an arrow from arc center to the angle you want to check, setting `upward` and `plate`
+this will display an arrow from arc center to the angle you want to check, helpful when testing `upward` and `plate`
 
 ```csharp
 Vector3 startPos = Arc.GetDirection(_upward, _plate, angle).normalized * _arcRadis;

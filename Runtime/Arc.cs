@@ -41,21 +41,21 @@ namespace SaintsDrawer
             return center + forward * radius * Mathf.Cos(deg) + side * radius * Mathf.Sin(deg);
         }
 
-        public static void DrawBySegCount(Vector3 center, float radius, float fromArc, float toArc, Vector3 upward, Vector3 plate, int numSegments)
+        public static void DrawBySegCount(Vector3 center, float radius, float fromArc, float toArc, Vector3 upward, Vector3 plate, int numSegments=40)
         {
             DrawGizmos(GetDrawPoints(center, radius, upward, plate, FloatRange(fromArc, toArc, numSegments)));
         }
-        public static void DrawBySegCount(LineRenderer lineRenderer, Vector3 center, float radius, float fromArc, float toArc, Vector3 upward, Vector3 plate, int numSegments)
+        public static void DrawBySegCount(LineRenderer lineRenderer, Vector3 center, float radius, float fromArc, float toArc, Vector3 upward, Vector3 plate, int numSegments=40)
         {
             DrawLineRenderer(lineRenderer, GetDrawPoints(center, radius, upward, plate, FloatRange(fromArc, toArc, numSegments)));
         }
 
-        public static void Draw(Vector3 center, float radius, float fromArc, float toArc, Vector3 upward, Vector3 plate, float segAngle)
+        public static void Draw(Vector3 center, float radius, float fromArc, float toArc, Vector3 upward, Vector3 plate, float segAngle=10f)
         {
             DrawGizmos(GetDrawPoints(center, radius, upward, plate, FloatStep(fromArc, toArc, segAngle)));
         }
 
-        public static void Draw(LineRenderer lineRenderer, Vector3 center, float radius, float fromArc, float toArc, Vector3 upward, Vector3 plate, float segAngle)
+        public static void Draw(LineRenderer lineRenderer, Vector3 center, float radius, float fromArc, float toArc, Vector3 upward, Vector3 plate, float segAngle=10f)
         {
             DrawLineRenderer(lineRenderer, GetDrawPoints(center, radius, upward, plate, FloatStep(fromArc, toArc, segAngle)));
         }
