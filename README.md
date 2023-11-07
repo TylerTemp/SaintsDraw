@@ -18,6 +18,11 @@ Using `Arrow.Draw` to draw an arrow, which has parameters:
 
 Append a `LineRenderer` as the first parameter to draw the arrow using `LineRenderer`
 
+```csharp
+using SaintsDraw;
+Arrow.Draw(Vector3.zero, Vector3.one);
+```
+
 ### Circle (Disk) ###
 
 ![circle](https://github.com/TylerTemp/SaintsDraw/assets/6391063/6eaef5f9-2b00-433c-86a9-368c04061ebe)
@@ -31,8 +36,12 @@ Using `Circle.Draw` to draw an circle (disk), which has parameters:
 
 Using `Circle.DrawBySegCount` to draw an circle with fixed segment steps, which means each segment will have the same angle. It has the same parameters as `Circle.Draw` except `int numSegments` is replaced by `float segAngle`.
 
-
 Append a `LineRenderer` as the first parameter to draw the arc using `LineRenderer`
+
+```csharp
+using SaintsDraw;
+Circle.Draw(Vector3.zero, 5f, Vector3.up, 40);
+```
 
 ### Arc ###
 
@@ -57,6 +66,11 @@ Using `Arc.DrawBySegCount` to draw an with fixed segment steps, which means each
 
 Append a `LineRenderer` as the first parameter to draw the arc using `LineRenderer`
 
+```csharp
+using SaintsDraw;
+Arc.Draw(Vector3.zero, 5f, 60f, 120f, Vector3.up, Vector3.left, 40);
+```
+
 ## Some Tools ##
 
 ### Gizmos Color ###
@@ -79,8 +93,7 @@ using (new MatrixScoop(transform.localToWorldMatrix))
 }
 ```
 
-### Circle/Arc Tools ###
-
+### Arc Tools ###
 
 this will normalized your angle, which allow over 360 but will has no overlap
 
