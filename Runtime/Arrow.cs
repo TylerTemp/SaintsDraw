@@ -6,11 +6,19 @@ namespace SaintsDraw
     {
         public static void Draw(LineRenderer lineRenderer, Vector3 from, Vector3 to, float arrowHeadLength = 0.5f, float arrowHeadAngle = 20.0f, Vector3? up = null)
         {
+            if(Vector3.SqrMagnitude(from - to) < 0.0001f)
+            {
+                return;
+            }
             DrawLineRenderer(lineRenderer, GetPoints(from, to, arrowHeadLength, arrowHeadAngle, up));
         }
 
         public static void Draw(Vector3 from, Vector3 to, float arrowHeadLength = 0.5f, float arrowHeadAngle = 20.0f, Vector3? up = null)
         {
+            if(Vector3.SqrMagnitude(from - to) < 0.0001f)
+            {
+                return;
+            }
             DrawGizmos(GetPoints(from, to, arrowHeadLength, arrowHeadAngle, up));
         }
 
