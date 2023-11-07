@@ -18,6 +18,20 @@ Using `Arrow.Draw` to draw an arrow, which has parameters:
 
 Append a `LineRenderer` as the first parameter to draw the arrow using `LineRenderer`
 
+### Circle (Disk) ###
+
+Using `Circle.Draw` to draw an circle (disk), which has parameters:
+
+*   `Vector3 center` center of the circle
+*   `float radius` radius of the circle
+*   `Vector3 upward` up direction of the circle. The circle is always perpendicular to this value. Usually `Vector3.up` is used
+*   `int numSegments` how many segments to draw for the arc. The bigger it is, the smoother the arc is
+
+Using `Circle.DrawBySegCount` to draw an circle with fixed segment steps, which means each segment will have the same angle. It has the same parameters as `Circle.Draw` except `int numSegments` is replaced by `float segAngle`.
+
+
+Append a `LineRenderer` as the first parameter to draw the arc using `LineRenderer`
+
 ### Arc ###
 
 ![circle_arc](https://github.com/TylerTemp/SaintsDraw/assets/6391063/bb6ca2e8-cb52-405c-954a-c31773c0a629)
@@ -36,15 +50,10 @@ Using `Arc.Draw` to draw an arc, which has parameters:
 
 *   `int numSegments` how many segments to draw for the arc. The bigger it is, the smoother the arc is
 
-Using `Arc.DrawBySegCount` to draw an with fixed segment step, which means each segment will have the same angle. It has the same parameters as `Arc.Draw` except `int numSegments` is replaced by `float segAngle`.
+Using `Arc.DrawBySegCount` to draw an with fixed segment steps, which means each segment will have the same angle. It has the same parameters as `Arc.Draw` except `int numSegments` is replaced by `float segAngle`.
 
 
 Append a `LineRenderer` as the first parameter to draw the arc using `LineRenderer`
-
-### Circle ###
-
-`Circle` is just a shortcut of Arc with `fromArc = 0` and `toArc = 360`. Just omit these two parameters with the same function name as `Arc` to draw a circle.
-
 
 ## Some Tools ##
 

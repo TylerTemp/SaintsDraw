@@ -109,7 +109,7 @@ namespace SaintsDrawer
         }
 
 
-        private static IEnumerable<float> FloatRange(float min, float max, int sep)
+        public static IEnumerable<float> FloatRange(float min, float max, int sep)
         {
             float step = (max - min) / sep;
 
@@ -119,7 +119,7 @@ namespace SaintsDrawer
             }
         }
 
-        private static IEnumerable<float> FloatStep(float min, float max, float step)
+        public static IEnumerable<float> FloatStep(float min, float max, float step)
         {
             float curValue = min;
             while (curValue <= max)

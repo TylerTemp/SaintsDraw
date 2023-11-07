@@ -32,7 +32,7 @@ namespace SaintsDrawer
 
             // Draw arrowhead lines
             // float arrowheadLength = 0.2f;
-            Vector3 arrowheadTip = to;
+            // Vector3 arrowheadTip = to;
             // Vector3 arrowheadLeft = to - rotation * new Vector3(-arrowHeadLength, 0, arrowHeadLength);
             // Vector3 arrowheadRight = to - rotation * new Vector3(arrowHeadLength, 0, arrowHeadLength);
 
