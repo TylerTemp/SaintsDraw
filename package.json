@@ -1,7 +1,7 @@
 {
   "name": "today.comes.saintsdraw",
   "version": "1.0.0",
-  "displayName": "SaintsDrawer",
+  "displayName": "SaintsDraw",
   "description": "A Unity plugin for gizmos and LineRenderer drawing in inspector",
   "unity": "2018.4",
   "dependencies": {
