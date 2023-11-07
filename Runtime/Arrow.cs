@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace SaintsDrawer
+namespace SaintsDraw
 {
     public static class Arrow
     {

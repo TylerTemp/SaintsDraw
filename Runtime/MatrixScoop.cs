@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
-namespace SaintsDrawer
+namespace SaintsDraw
 {
     public class MatrixScoop: IDisposable
     {
