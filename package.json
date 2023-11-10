@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "displayName": "SaintsDraw",
   "description": "A Unity plugin for gizmos and LineRenderer drawing in inspector",
-  "unity": "2018.4",
+  "unity": "2020.2",
   "dependencies": {
   },
   "keywords": [
