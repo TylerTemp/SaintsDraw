@@ -2,26 +2,40 @@
 
 `SaintsDraw` allow you to draw arrow, circle, and arc in Unity, using Gizmos or LineRenderer
 
-Unity: 2020.2 or above
+Deveoped by: [TylerTemp](https://github.com/TylerTemp), [墨瞳](https://github.com/xc13308)
+
+Unity: 2019.1 or above
 
 ## Installation ##
 
+*   Using [OpenUPM](https://openupm.com/)
+
+    ```bash
+    openupm add today.comes.saintsdraw
+    ```
+
 *   Using git upm:
 
-add this line to manifest.json in your project
+    add this line to manifest.json in your project
 
-{
-    // your other dependencies...
-    "today.comes.saintsdraw": "https://github.com/TylerTemp/SaintsDraw.git"
-}
+    ```javascript
+    {
+        "dependencies": {
+            "today.comes.saintsdraw": "https://github.com/TylerTemp/SaintsDraw.git",
+            // your other dependencies...
+        }
+    }
+    ```
 
-Using a unitypackage:
+*   Using a unitypackage:
 
-Go to the [Release Page](https://github.com/TylerTemp/SaintsDraw/releases) to download a desired version of unitypackage and import it to your project
+    Go to the [Release Page](https://github.com/TylerTemp/SaintsDraw/releases) to download a desired version of unitypackage and import it to your project
 
-Using a git submodule:
+*   Using a git submodule:
 
-git submodule add https://github.com/TylerTemp/SaintsDraw.git Assets/SaintsDraw
+    ```bash
+    git submodule add https://github.com/TylerTemp/SaintsDraw.git Assets/SaintsDraw
+    ```
 
 ## Draw ##
 
