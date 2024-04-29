@@ -4,6 +4,8 @@ namespace SaintsDraw.Samples
 {
     public class DrawRect : MonoBehaviour
     {
+        public Camera targetCamera = null;
+
         public bool draw = true;
 
         private void OnDrawGizmos()
@@ -15,7 +17,7 @@ namespace SaintsDraw.Samples
 
             using (new ColorScoop(Color.green))
             {
-                UIGizmos.DrawWireRectTransform(GetComponent<RectTransform>());
+                UIGizmos.DrawWireRectTransform(GetComponent<RectTransform>(), targetCamera);
             }
 
         }
