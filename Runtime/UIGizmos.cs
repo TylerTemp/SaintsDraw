@@ -6,8 +6,6 @@ namespace SaintsDraw
     {
         private static void GetPos(RectTransform rectTransform, Camera camera, float distance, Vector3[] corners)
         {
-            // Vector3[] corners = new Vector3[4];
-
             rectTransform.GetWorldCorners(corners);
 
             if (camera == null)
@@ -18,8 +16,7 @@ namespace SaintsDraw
             Vector3 centerWorldPos = rectTransform.transform.position;
             Vector3 centerWorldDistancedPos = new Vector3(centerWorldPos.x, centerWorldPos.y, distance);
 
-            Gizmos.DrawSphere(centerWorldPos, 0.5f);
-
+            // Gizmos.DrawSphere(centerWorldPos, 0.5f);
             // Vector3 centerViewPos = camera.ScreenToWorldPoint(centerWorldDistancedPos);
             // using (new ColorScoop(Color.red))
             // {
