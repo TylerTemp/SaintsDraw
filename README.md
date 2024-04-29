@@ -106,6 +106,20 @@ using SaintsDraw;
 Arc.Draw(Vector3.zero, 5f, 60f, 120f, Vector3.up, Vector3.left, 40);
 ```
 
+### `DrawWireRectTransform` ###
+
+```csharp
+UIGizmos.DrawWireRectTransform(RectTransform rectTransform)
+```
+
+Draw a wireframe of a RectTransform in the scene view. This works even the `RectTransform` has rotation and scale.
+
+```csharp
+UIGizmos.DrawWireRectTransform(GetComponent<RectTransform>());
+```
+
+![DrawWireRectTransform](https://github.com/TylerTemp/SaintsDraw/assets/6391063/bf4c2d67-0731-4cd2-aad3-1653bc9420ac)
+
 ## Some Tools ##
 
 ### Gizmos Color ###
