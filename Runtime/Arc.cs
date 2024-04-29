@@ -43,7 +43,9 @@ namespace SaintsDraw
 
         public static void DrawBySegCount(Vector3 center, float radius, float fromArc, float toArc, Vector3 upward, Vector3 plate, int numSegments=40)
         {
+#if !SAINTSDRAW_GIZMOS_DISABLE && UNITY_EDITOR
             DrawGizmos(GetDrawPoints(center, radius, upward, plate, FloatRange(fromArc, toArc, numSegments)));
+#endif
         }
         public static void DrawBySegCount(LineRenderer lineRenderer, Vector3 center, float radius, float fromArc, float toArc, Vector3 upward, Vector3 plate, int numSegments=40)
         {
@@ -52,7 +54,9 @@ namespace SaintsDraw
 
         public static void Draw(Vector3 center, float radius, float fromArc, float toArc, Vector3 upward, Vector3 plate, float segAngle=10f)
         {
+#if !SAINTSDRAW_GIZMOS_DISABLE && UNITY_EDITOR
             DrawGizmos(GetDrawPoints(center, radius, upward, plate, FloatStep(fromArc, toArc, segAngle)));
+#endif
         }
 
         public static void Draw(LineRenderer lineRenderer, Vector3 center, float radius, float fromArc, float toArc, Vector3 upward, Vector3 plate, float segAngle=10f)

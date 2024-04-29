@@ -2,7 +2,7 @@
 
 `SaintsDraw` allow you to draw arrow, circle, and arc in Unity, using Gizmos or LineRenderer
 
-Deveoped by: [TylerTemp](https://github.com/TylerTemp), [墨瞳](https://github.com/xc13308)
+Developed by: [TylerTemp](https://github.com/TylerTemp), [墨瞳](https://github.com/xc13308)
 
 Unity: 2019.1 or above
 

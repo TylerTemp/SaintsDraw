@@ -58,6 +58,7 @@ namespace SaintsDraw
 
         public static void Draw(Vector3 center, float radius, Vector3 upward, float segAngle=10f)
         {
+#if !SAINTSDRAW_GIZMOS_DISABLE && UNITY_EDITOR
             if (segAngle <= 0)
             {
                 return;
@@ -72,6 +73,7 @@ namespace SaintsDraw
                 .ToArray();
 
             DrawGizmos(circleVertices);
+#endif
         }
 
         public static void Draw(LineRenderer lineRenderer, Vector3 center, float radius, Vector3 upward, float segAngle=10f)
@@ -94,6 +96,7 @@ namespace SaintsDraw
 
         public static void DrawBySegCount(Vector3 center, float radius, Vector3 upward, int numSegments=40)
         {
+#if !SAINTSDRAW_GIZMOS_DISABLE && UNITY_EDITOR
             if (numSegments < 2)
             {
                 return;
@@ -106,6 +109,7 @@ namespace SaintsDraw
                 .ToArray();
 
             DrawGizmos(circleVertices);
+#endif
         }
 
         public static void DrawBySegCount(LineRenderer lineRenderer, Vector3 center, float radius, Vector3 upward, int numSegments=40)

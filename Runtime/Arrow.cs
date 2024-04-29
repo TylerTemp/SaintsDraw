@@ -15,11 +15,13 @@ namespace SaintsDraw
 
         public static void Draw(Vector3 from, Vector3 to, float arrowHeadLength = 0.5f, float arrowHeadAngle = 20.0f, Vector3? up = null)
         {
+#if !SAINTSDRAW_GIZMOS_DISABLE && UNITY_EDITOR
             if(Vector3.SqrMagnitude(from - to) < 0.0001f)
             {
                 return;
             }
             DrawGizmos(GetPoints(from, to, arrowHeadLength, arrowHeadAngle, up));
+#endif
         }
 
         private static (Vector3 tail, Vector3 head, Vector3 arrowheadLeft, Vector3 arrowheadRight) GetPoints(Vector3 from, Vector3 to, float arrowHeadLength = 0.5f, float arrowHeadAngle = 20.0f, Vector3? up = null)
