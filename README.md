@@ -36,6 +36,14 @@ Unity: 2019.1 or above
     ```bash
     git submodule add https://github.com/TylerTemp/SaintsDraw.git Assets/SaintsDraw
     ```
+    
+## Change Log ##
+
+**1.0.2**
+
+Add `camera` & `distance` for `DrawWireRectTransform` to support camera mode of a canvas.
+
+See [the full change log](https://github.com/TylerTemp/SaintsDraw/blob/master/CHANGELOG.md).
 
 ## Draw ##
 
@@ -109,10 +117,15 @@ Arc.Draw(Vector3.zero, 5f, 60f, 120f, Vector3.up, Vector3.left, 40);
 ### `DrawWireRectTransform` ###
 
 ```csharp
-UIGizmos.DrawWireRectTransform(RectTransform rectTransform)
+UIGizmos.DrawWireRectTransform(RectTransform rectTransform, Camera camera=null, float distance=5f)
 ```
 
 Draw a wireframe of a RectTransform in the scene view. This works even the `RectTransform` has rotation and scale.
+
+Parameters:
+*   `RectTransform rectTransform` the RectTransform to draw
+*   `Camera camera` the camera of the canvas. `null` for `Overlay` type.
+*   `float distance` the distance from the camera to the wireframe. This only works if you pass the camera parameter which is the target camera of the canvas, and ensure your `rectTransform` is under this canvas too.
 
 ```csharp
 UIGizmos.DrawWireRectTransform(GetComponent<RectTransform>());
