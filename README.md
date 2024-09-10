@@ -1,5 +1,8 @@
 # SaintsDraw #
 
+[![openupm](https://img.shields.io/npm/v/today.comes.saintsdraw?label=openupm&registry_uri=https://package.openupm.com)](https://openupm.com/packages/today.comes.saintsdraw/)
+[![openupm](https://img.shields.io/badge/dynamic/json?color=brightgreen&label=downloads&query=%24.downloads&suffix=%2Fmonth&url=https%3A%2F%2Fpackage.openupm.com%2Fdownloads%2Fpoint%2Flast-month%2Ftoday.comes.saintsdraw)](https://openupm.com/packages/today.comes.saintsdraw/)
+
 `SaintsDraw` allow you to draw arrow, circle, and arc in Unity, using Gizmos or LineRenderer
 
 Developed by: [TylerTemp](https://github.com/TylerTemp), [墨瞳](https://github.com/xc13308)
@@ -8,7 +11,7 @@ Unity: 2019.1 or above
 
 ## Installation ##
 
-*   Using [OpenUPM](https://openupm.com/)
+*   Using [OpenUPM](https://openupm.com/packages/today.comes.saintsdraw/)
 
     ```bash
     openupm add today.comes.saintsdraw
