@@ -24,7 +24,7 @@ namespace SaintsDraw
 #endif
         }
 
-        private static (Vector3 tail, Vector3 head, Vector3 arrowheadLeft, Vector3 arrowheadRight) GetPoints(Vector3 from, Vector3 to, float arrowHeadLength = 0.5f, float arrowHeadAngle = 20.0f, Vector3? up = null)
+        public static (Vector3 tail, Vector3 head, Vector3 arrowheadLeft, Vector3 arrowheadRight) GetPoints(Vector3 from, Vector3 to, float arrowHeadLength = 0.5f, float arrowHeadAngle = 20.0f, Vector3? up = null)
         {
             // Debug.Assert(arrowHeadLength>0);
             // Debug.Assert(arrowHeadAngle>0);
