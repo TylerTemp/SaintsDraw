@@ -1,3 +1,7 @@
+## 1.0.4 ##
+
+Make the arrow drawing helper public
+
 ## 1.0.2 ##
 
 Add `camera` & `distance` for `DrawWireRectTransform` to support camera mode of a canvas.

@@ -39,12 +39,12 @@ Unity: 2019.1 or above
     ```bash
     git submodule add https://github.com/TylerTemp/SaintsDraw.git Assets/SaintsDraw
     ```
-    
+
 ## Change Log ##
 
-**1.0.2**
+**1.0.4**
 
-Add `camera` & `distance` for `DrawWireRectTransform` to support camera mode of a canvas.
+Make the arrow drawing helper public
 
 See [the full change log](https://github.com/TylerTemp/SaintsDraw/blob/master/CHANGELOG.md).
 
