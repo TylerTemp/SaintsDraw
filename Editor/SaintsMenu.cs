@@ -9,6 +9,11 @@ namespace SaintsDraw.Editor
     public static class SaintsMenu
     {
 
+#if !SAINTSDRAW
+        [InitializeOnLoadMethod]
+        public static void AddInstalledMarco() => AddCompileDefine("SAINTSDRAW");
+#endif
+
         #region Gizmos
 #if SAINTSDRAW_GIZMOS_DISABLE
         [MenuItem("Window/Saints/Draw/Enable Gizmos")]
